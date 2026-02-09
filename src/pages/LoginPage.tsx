@@ -118,7 +118,7 @@ const LoginPage = () => {
           </div>
 
           <div className="mt-4 p-4 bg-blue-50 dark:bg-blue-900 rounded-lg text-sm text-blue-800 dark:text-blue-200">
-            <p className="font-semibold mb-1">Demo Credentials:</p>
+            <p className="font-semibold mb-1"></p>
             <p> create a new account</p>
           </div>
         </div>
