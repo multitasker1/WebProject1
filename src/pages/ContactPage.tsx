@@ -164,7 +164,7 @@ const ContactPage = () => {
                     value={formData.mobile}
                     onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-900 dark:text-white"
-                    placeholder="+91 7895227827"
+                    placeholder="+91 XXXXX XXXXX"
                   />
                 </div>
 
@@ -199,21 +199,8 @@ const ContactPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center">
           {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-        <div className="flex justify-center">
-            <script>
-                atOptions = {
-                    'key' : '434ce64f269e1eb13bd566a25bf782a5',
-                     'format' : 'iframe',
-                    'height' : 90,
-                    'width' : 728,
-                    'params' : {}
-                  };
-            </script>
-          {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-            <script 
-                type="text/javascript" 
-                src="https://www.highperformanceformat.com/434ce64f269e1eb13bd566a25bf782a5/invoke.js">
-            </script>
+          <div className="h-24 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700 rounded">
+            <span className="text-gray-400">Adsterra Banner 728x90</span>
           </div>
         </div>
       </div>
