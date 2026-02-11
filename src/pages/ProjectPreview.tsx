@@ -232,8 +232,18 @@ const ProjectPreview = () => {
         <div className="mt-8 bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Advertisement</p>
           {/* INSERT ADSTERRA NATIVE AD SCRIPT HERE */}
-          <div className="h-32 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700 rounded">
-            <span className="text-gray-400">Adsterra Native Ad</span>
+          <div className="adsterra-native">
+            <script type="text/javascript">
+              atOptions = {
+                  'key' : 'c1a690d6abda3d5eec6a20f85fb32f6e',
+                  'format' : 'iframe',
+                  'height' : 250,
+                  'width' : 300,
+                  'params' : {}
+              };
+          </script>
+          <script async="async" data-cfasync="false" src="https://pl28680604.effectivegatecpm.com/c1a690d6abda3d5eec6a20f85fb32f6e/invoke.js"></script>
+              <div id="container-c1a690d6abda3d5eec6a20f85fb32f6e"></div>
           </div>
         </div>
       </div>
