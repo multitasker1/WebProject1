@@ -186,9 +186,23 @@ const PricingPage = () => {
         <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">Advertisement</p>
           {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-          <div className="h-24 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700 rounded">
-            <span className="text-gray-400">Adsterra Banner 728x90</span>
-          </div>
+                 {/* ADSTERRA BANNER AD - Placement 1: Below Hero */}
+              <div className="flex justify-center">
+                  <script>
+                      atOptions = {
+                          'key' : '434ce64f269e1eb13bd566a25bf782a5',
+                          'format' : 'iframe',
+                          'height' : 90,
+                           'width' : 728,
+                          'params' : {}
+                      };
+                  </script>
+                  {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
+                <script 
+                type="text/javascript" 
+                src="https://www.highperformanceformat.com/434ce64f269e1eb13bd566a25bf782a5/invoke.js">
+                </script>
+            </div>
         </div>
       </div>
 
@@ -285,9 +299,19 @@ const PricingPage = () => {
           {/* INSERT ADSTERRA NATIVE AD SCRIPT HERE */}
           <div className="grid md:grid-cols-2 gap-4">
             {[1, 2].map((i) => (
-              <div key={i} className="border-2 border-dashed border-gray-300 dark:border-gray-700 rounded p-4 h-32 flex items-center justify-center">
-                <span className="text-gray-400">Adsterra Native Ad {i}</span>
-              </div>
+                        <div className="adsterra-native">
+                            <script type="text/javascript">
+                                atOptions = {
+                                    'key' : 'c1a690d6abda3d5eec6a20f85fb32f6e',
+                                    'format' : 'iframe',
+                                    'height' : 250,
+                                    'width' : 300,
+                                    'params' : {}
+                                };
+                            </script>
+                            <script async="async" data-cfasync="false" src="https://pl28680604.effectivegatecpm.com/c1a690d6abda3d5eec6a20f85fb32f6e/invoke.js"></script>
+                              <div id="container-c1a690d6abda3d5eec6a20f85fb32f6e"></div>
+                      </div>
             ))}
           </div>
         </div>
