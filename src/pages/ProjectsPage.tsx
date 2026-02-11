@@ -3,6 +3,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import { Eye, ShoppingCart, ExternalLink } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import PopunderAd from '../components/ads/PopunderAd';
+import NativeAd from '../components/ads/NativeAd';
+import BannerAd from '../components/ads/BannerAd';
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
@@ -68,6 +71,9 @@ const ProjectsPage = () => {
           </p>
         </div>
       </section>
+
+      {/* ADSTERRA NATIVE AD - After Hero */}
+      <NativeAd />
 
       <section className="py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -137,39 +143,13 @@ const ProjectsPage = () => {
         </div>
       </section>
 
-      {/* ADSTERRA AD - Native Banner */}
-          <div className="adsterra-native">
-              <script type="text/javascript">
-                atOptions = {
-                  'key' : 'c1a690d6abda3d5eec6a20f85fb32f6e',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-              </script>
-              <script async="async" data-cfasync="false" src="https://pl28680604.effectivegatecpm.com/c1a690d6abda3d5eec6a20f85fb32f6e/invoke.js"></script>
-                <div id="container-c1a690d6abda3d5eec6a20f85fb32f6e"></div>
-         </div>
-          {/* ADSTERRA BANNER AD - Placement 1: Below Hero */}
-            <div className="flex justify-center">
-              <script>
-                  atOptions = {
-                  'key' : '434ce64f269e1eb13bd566a25bf782a5',
-                  'format' : 'iframe',
-                  'height' : 90,
-                  'width' : 728,
-                  'params' : {}
-                  };
-              </script>
-           {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-             <script 
-                type="text/javascript" 
-                src="https://www.highperformanceformat.com/434ce64f269e1eb13bd566a25bf782a5/invoke.js">
-             </script>
-          </div>
+      {/* ADSTERRA BANNER AD */}
+      <BannerAd />
 
       <Footer />
+      
+      {/* ADSTERRA POPUNDER AD */}
+      <PopunderAd />
     </div>
   );
 };
