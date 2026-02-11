@@ -151,8 +151,21 @@ const AboutPage = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center">
           {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-          <div className="h-24 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700 rounded">
-            <span className="text-gray-400">Adsterra Banner 728x90</span>
+            <div className="flex justify-center">
+              <script>
+                  atOptions = {
+                      'key' : '434ce64f269e1eb13bd566a25bf782a5',
+                      'format' : 'iframe',
+                      'height' : 90,
+                      'width' : 728,
+                      'params' : {}
+                  };
+              </script>
+            {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
+              <script 
+                  type="text/javascript" 
+                  src="https://www.highperformanceformat.com/434ce64f269e1eb13bd566a25bf782a5/invoke.js">
+              </script>
           </div>
         </div>
       </div>
