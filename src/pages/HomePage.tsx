@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import { ArrowRight, Code, Zap, Shield, Sparkles, Eye, ShoppingCart } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import PopunderAd from '../components/ads/PopunderAd';
+import NativeAd from '../components/ads/NativeAd';
+import BannerAd from '../components/ads/BannerAd';
 
 const HomePage = () => {
   const [featuredProjects, setFeaturedProjects] = useState<any[]>([]);
@@ -58,24 +61,8 @@ const HomePage = () => {
           </div>
         </div>
         
-      {/* ADSTERRA BANNER AD - Placement 1: Below Hero */}
-      <div className="flex justify-center">
-        <script>
-              atOptions = {
-              'key' : '434ce64f269e1eb13bd566a25bf782a5',
-              'format' : 'iframe',
-              'height' : 90,
-              'width' : 728,
-              'params' : {}
-          };
-        </script>
-        {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-        <script 
-          type="text/javascript" 
-          src="https://www.highperformanceformat.com/434ce64f269e1eb13bd566a25bf782a5/invoke.js">
-        </script>
-      </div>
-            
+        {/* ADSTERRA BANNER AD - Placement 1: Below Hero */}
+        <BannerAd />
       </section>
 
       {/* Features Section */}
@@ -131,25 +118,7 @@ const HomePage = () => {
       </section>
 
       {/* ADSTERRA NATIVE AD - Placement 2: Between Sections */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4">
-          <p className="text-sm text-gray-500 dark:text-gray-400 mb-2 text-center">Sponsored Content</p>
-          {/* INSERT ADSTERRA NATIVE AD SCRIPT HERE */}
-          <div className="adsterra-native">
-                <script type="text/javascript">
-                atOptions = {
-                  'key' : 'c1a690d6abda3d5eec6a20f85fb32f6e',
-                  'format' : 'iframe',
-                  'height' : 250,
-                  'width' : 300,
-                  'params' : {}
-                };
-                </script>
-              <script async="async" data-cfasync="false" src="https://pl28680604.effectivegatecpm.com/c1a690d6abda3d5eec6a20f85fb32f6e/invoke.js"></script>
-            <div id="container-c1a690d6abda3d5eec6a20f85fb32f6e"></div>
-          </div>
-        </div>
-      </div>
+      <NativeAd />
 
       {/* Featured Projects Section */}
       {featuredProjects.length > 0 && (
@@ -248,29 +217,13 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* ADSTERRA BANNER AD - Placement 1: Below Hero */}
-      <div className="flex justify-center">
-        <script>
-              atOptions = {
-              'key' : '434ce64f269e1eb13bd566a25bf782a5',
-              'format' : 'iframe',
-              'height' : 90,
-              'width' : 728,
-              'params' : {}
-          };
-        </script>
-        {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
-        <script 
-          type="text/javascript" 
-          src="https://www.highperformanceformat.com/434ce64f269e1eb13bd566a25bf782a5/invoke.js">
-        </script>
-      </div>
+      {/* ADSTERRA BANNER AD - Placement 3: Before Footer */}
+      <BannerAd />
 
       <Footer />
       
-      {/* ADSTERRA POPUNDER SCRIPT - Add this at the end of body */}
-      {/* INSERT ADSTERRA POPUNDER SCRIPT HERE - Will trigger on page load/click */}
-      <script src="https://pl28680505.effectivegatecpm.com/af/5f/96/af5f962c6b9c64936bc10f6208c1b3f0.js"></script>
+      {/* ADSTERRA POPUNDER SCRIPT - Loads on page visit */}
+      <PopunderAd />
     </div>
   );
 };
