@@ -124,6 +124,20 @@ const LoginPage = () => {
         </div>
       </div>
     </div>
+               {/* Adsterra Native Ad */}
+      <div className="adsterra-native">
+          <script type="text/javascript">
+              atOptions = {
+                  'key' : 'c1a690d6abda3d5eec6a20f85fb32f6e',
+                  'format' : 'iframe',
+                  'height' : 250,
+                  'width' : 300,
+                  'params' : {}
+              };
+        </script>
+        <script async="async" data-cfasync="false" src="https://pl28680604.effectivegatecpm.com/c1a690d6abda3d5eec6a20f85fb32f6e/invoke.js"></script>
+          <div id="container-c1a690d6abda3d5eec6a20f85fb32f6e"></div>
+      </div>       
   );
 };
 
