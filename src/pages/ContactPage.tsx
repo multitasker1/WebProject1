@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Eye } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import PopunderAd from '../components/ads/PopunderAd';
+import NativeAd from '../components/ads/NativeAd';
+import BannerAd from '../components/ads/BannerAd';
 
 const ContactPage = () => {
   const [searchParams] = useSearchParams();
@@ -111,6 +114,22 @@ const ContactPage = () => {
                   <p className="font-semibold mt-4">UPI ID: 7895227827@paytm</p>
                 </div>
               </div>
+
+              {/* WhatsApp Contact Button */}
+              <div className="mt-6">
+                <a
+                  href="https://wa.me/917895227827"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-full px-6 py-4 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+                >
+                  <Eye className="w-5 h-5 mr-2" />
+                  <span className="text-lg">WhatsApp Contact</span>
+                </a>
+                <p className="text-center text-gray-600 dark:text-gray-400 mt-2 text-sm">
+                  +91 7895227827
+                </p>
+              </div>
             </div>
 
             {/* Contact Form */}
@@ -164,7 +183,7 @@ const ContactPage = () => {
                     value={formData.mobile}
                     onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-900 dark:text-white"
-                    placeholder="+91 XXXXX XXXXX"
+                    placeholder="+91 7895227827"
                   />
                 </div>
 
@@ -200,7 +219,7 @@ const ContactPage = () => {
         <div className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 text-center">
           {/* INSERT ADSTERRA BANNER SCRIPT HERE */}
           <div className="h-24 flex items-center justify-center border-2 border-dashed border-gray-300 dark:border-gray-700 rounded">
-            <span className="text-gray-400">Adsterra Banner 728x90</span>
+            <span className="text-gray-400">Ad</span>
           </div>
         </div>
       </div>
