@@ -39,11 +39,25 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="relative">
-                <div className="w-full h-96 bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-white text-6xl font-bold">
-                    WP
+                {/* Gradient frame */}
+                  <div className="w-full h-96 rounded-2xl bg-gradient-to-br from-blue-600 to-purple-600 p-[3px] shadow-xl">
+                    {/* Inner card */}
+                      <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center overflow-hidden">
+                        {/* Profile image */}
+                          <img
+                              src={profileImg}
+                              alt="Profile"
+                              loading="lazy"
+                              decoding="async"
+                              className="
+                              w-72 h-72 sm:w-80 sm:h-80 md:w-96 md:h-96
+                              object-cover
+                              rounded-full
+                              ring-4 ring-white/90 dark:ring-gray-900/70
+                              shadow-2xl
+                              "/>
+                      </div>
                   </div>
-                </div>
               </div>
             </div>
             
