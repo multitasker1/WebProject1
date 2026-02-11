@@ -45,7 +45,7 @@ const AboutPage = () => {
                       <div className="w-full h-full rounded-2xl bg-white dark:bg-gray-900 flex items-center justify-center overflow-hidden">
                         {/* Profile image */}
                           <img
-                              src={profileImg}
+                              src="src/pages/Screenshot 2026-01-23 212910.png"
                               alt="Profile"
                               loading="lazy"
                               decoding="async"
